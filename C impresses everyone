@@ -1,0 +1,14 @@
+ar=list(map(int, input().split()))
+no=ar[0]
+arr=ar[1:no+1]
+test=ar[no+2:]
+for i in range(len(test)):
+    n=test[i]
+    j=no-1
+    while n>arr[j]:
+        n-=arr[j]
+        j-=1
+    if j%2==0:
+        print('A')
+    else:
+        print('B')
