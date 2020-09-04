@@ -1,0 +1,11 @@
+from sys import stdin
+o,n = input().split()
+a = set(map(int,stdin.readline().split()))
+q = map(int,stdin.readlines())
+ 
+for k in q:
+    if k in a:
+        print('YES')
+    else:
+        print('NO')
+        
